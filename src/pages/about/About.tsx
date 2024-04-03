@@ -1,5 +1,5 @@
-import pngImage from '@/assets/png.png'
-import Icon from '@/assets/svg.svg'
+import pngImage from '@assets/png.png'
+import Icon from '@assets/svg.svg'
 
 const About = () => {
     return (
