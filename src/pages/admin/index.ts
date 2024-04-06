@@ -1,0 +1,1 @@
+export {LazyAdmin as Admin} from './LazyAdmin';

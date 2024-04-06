@@ -1,27 +1,49 @@
-import {createRoot} from "react-dom/client";
-import {App} from "@/app/App";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createRoot} from "react-dom/client";
 import {Suspense} from "react";
-import {About} from "@/pages/about";
-import {Contacts} from "@/pages/contacts";
+import {App} from "@/app/App";
+import {Admin} from "@/pages/admin";
+import {Product} from "@/pages/product";
+import {Main} from "@/pages/main";
+import {Cart} from "@/pages/cart";
+import {Auth} from "@/pages/auth";
+
+let childrenRoutes = [
+    {
+        path: '/',
+        element: <Suspense fallback={'...loading'}><Main/></Suspense>
+    },
+    {
+        path: 'product',
+        element: <Suspense fallback={'...loading'}><Product/></Suspense>
+    },
+    {
+        path: 'auth',
+        element: <Suspense fallback={'...loading'}><Auth/></Suspense>
+    },
+    {
+        path: 'admin',
+        element: <Suspense fallback={'...loading'}><Admin/></Suspense>
+    },
+    {
+        path: 'cart',
+        element: <Suspense fallback={'...loading'}><Cart/></Suspense>
+    },
+    {
+        path: 'product',
+        element: <Suspense fallback={'...loading'}><Product/></Suspense>
+    }
+];
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App/>,
         errorElement: 'error',
-        children: [
-            {
-                path: 'about',
-                element: <Suspense fallback={'...loading'}><About/></Suspense>
-            },
-            {
-                path: 'contacts',
-                element: <Suspense fallback={'...loading'}><Contacts/></Suspense>
-            }
-        ]
+        children: childrenRoutes
     },
 ]);
+
 
 const root = document.getElementById('root');
 
