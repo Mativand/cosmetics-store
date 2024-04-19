@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@types/debug": "^4.1.12",
     "@types/node": "^20.8.3",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "debug": "^4.3.4",
     "fork-ts-checker-webpack-plugin": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
