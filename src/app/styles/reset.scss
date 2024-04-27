@@ -1,0 +1,84 @@
+/* Обнуляем margin и padding для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Элементы HTML5 display block по умолчанию */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Обнуляем стили списка */
+ul, ol {
+  list-style: none;
+}
+
+/* Обнуляем стили таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Обнуляем стили fieldset и legend */
+fieldset, legend {
+  border: 0;
+  padding: 0;
+}
+
+/* Устанавливаем вертикальное выравнивание для элементов */
+img, video {
+  vertical-align: middle;
+}
+
+/* Убираем обводку у элементов при фокусе, добавляем только при необходимости */
+a, button, input, textarea, select {
+  outline: none;
+  text-decoration: none;
+}
+
+/* Устанавливаем фоновый цвет и цвет текста для body */
+body {
+  background: #fff;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit; /* По дефолту, шрифтовые свойства, для этих элементов не наследуются */
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+img {
+  width: 100%;
+}
