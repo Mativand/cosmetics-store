@@ -53,6 +53,11 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         ],
     }
 
+    const fontLoader = {
+            test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+    }
+
     const tsLoader = {
         test: /\.tsx?$/,
         exclude: /node_modules/,
@@ -69,6 +74,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         ]
     }
 
-    return [assetLoader, svgLoader, scssLoader, tsLoader]
+    return [assetLoader, fontLoader, svgLoader, scssLoader, tsLoader]
 
 }
