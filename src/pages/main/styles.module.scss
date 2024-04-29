@@ -85,3 +85,23 @@ section {
   }
 
 }
+
+.categories {
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+      text-align: center;
+
+      .image {
+        max-width: 360px;
+        margin-bottom: 30px;
+      }
+
+      .name {
+        font-size: 20px;
+      }
+    }
+  }
+}
