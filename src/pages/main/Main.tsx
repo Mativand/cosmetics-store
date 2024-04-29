@@ -5,6 +5,7 @@ import image2 from '@assets/images/image-2.png';
 import image3 from '@assets/images/image-3.png';
 import image4 from '@assets/images/image-4.png';
 import image5 from '@assets/images/image-5.png';
+import image6 from '@assets/images/image-6.png';
 const Main: FC = () => {
     return (
         <main className="wrapper">
@@ -71,8 +72,30 @@ const Main: FC = () => {
                     </div>
                 </div>
             </section>
-            <section className={s.about}>
 
+            <section className={s.about}>
+                <div className={s.content}>
+                    <div className={s.column}>
+                        <div className={s.image}>
+                            <img src={image6} alt={''}/>
+                        </div>
+                    </div>
+                    <div className={s.column}>
+                        <div className={s.textCont}>
+                            <h2 className={s.title}>
+                                Натуральный уход за кожей
+                            </h2>
+                            <p className={s.description}>
+                                Наша миссия — помочь вам добиться естественного и
+                                сияющего цвета лица за счет использования высококачественных
+                                натуральных продуктов по уходу за кожей.
+                            </p>
+                            <div className={s.buttonCont}>
+                                <button className={s.button}>В каталог</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className={s.examples}>
 
